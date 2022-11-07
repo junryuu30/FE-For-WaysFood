@@ -1,13 +1,11 @@
 import { Container, Image } from 'react-bootstrap';
 import pizzaImage from '../assets/image/pizza.png';
 
-import AOS from 'aos';
-import 'aos/dist/aos.css';
 import { useEffect } from 'react';
 
 export const Banner = () => {
 	useEffect(() => {
-		AOS.init();
+
 	}, []);
 	return (
 		<Container
@@ -47,7 +45,8 @@ export const Banner = () => {
 					</div>
 				</div>
 			</div>
-			<div className='mb-5' data-aos='fade-left' data-aos-duration='1000'>
+			<div className='mb-5' 
+			>
 				<Image src={pizzaImage}></Image>
 			</div>
 		</Container>
