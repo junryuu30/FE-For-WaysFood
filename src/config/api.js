@@ -2,9 +2,10 @@ import axios from "axios";
 
 export const API = axios.create({
   // baseURL: process.env.REACT_APP_BASEURL,
-  baseURL: 'https://waysfood-go.herokuapp.com/api/v1',
+  // jihan:
+  // baseURL: 'https://waysfood-go.herokuapp.com/api/v1', 
   
-  // baseURL: 'https://be-waysfood.herokuapp.com/api/v1',
+  baseURL: 'https://be-waysfood.herokuapp.com/api/v1',
 });
 
 export const setAuthToken = (token) => {
